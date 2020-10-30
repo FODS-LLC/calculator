@@ -1,0 +1,34 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@font-face {
+    font-family: "BebasNeue-Bold";
+    src: url(/fonts/BebasNeue-Bold.ttf);
+    font-style: normal;
+    font-stretch: 1% 500%; /* Required by Chrome */
+  }
+  @font-face {
+    font-family: "BebasNeue-Regular";
+    src: url(/fonts/BebasNeue-Regular.otf);
+    font-style: normal;
+    font-stretch: 1% 500%; /* Required by Chrome */
+  }
+  @font-face {
+    font-family: "BebasNeue-Regular";
+    src: url(/fonts/BebasNeue-Regular.otf);
+    font-style: normal;
+    font-stretch: 1% 500%; /* Required by Chrome */
+  }
+  @font-face {
+    font-family: "Nexa-Bold";
+    src: url(/fonts/Nexa-Bold.otf);
+    font-style: normal;
+    font-stretch: 1% 500%; /* Required by Chrome */
+  }
+  @font-face {
+    font-family: "Nexa-Light";
+    src: url(/fonts/Nexa-Light.otf);
+    font-style: normal;
+    font-stretch: 1% 500%; /* Required by Chrome */
+  }
