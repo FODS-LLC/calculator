@@ -124,10 +124,6 @@ export default {
     }
   },
   computed: {
-    formatMoney(n) {
-    return "$ " + n.toLocaleString().split(".")[0] + "."
-        + n.toFixed(2).split(".")[1];
-    },
     computedClasses() {
       if (this.generating) {
         return 'flex flex-wrap justify-center w-full'
@@ -170,21 +166,18 @@ export default {
       return Math.floor(this.costsFODS / (this.rocksCost / projectLength))
     },
     costSavings() {
-      function formatMoney(n) {
-        return "$ " + n.toLocaleString().split(".")[0] + "."
-        + n.toFixed(2).split(".")[1];
-      }
       const projectLength = parseInt(
         this.$store.state.formData.length_of_project
       )
       return [
         [
           '3 Years',
-          formatMoney(`${
+          `${
             -Math.floor(
-              this.costsFODS - (this.rocksCost / projectLength) * 36
-            ).toFixed(2) || 0
-          }`),
+              (this.costsFODS - (this.rocksCost / projectLength) * 36)
+            ).toLocaleString().split(".")[0] + "."
+        + n.toFixed(2).split(".")[1] || 0
+          } USD`,
         ],
         [
           '5 Years',
