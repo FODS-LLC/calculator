@@ -77,7 +77,7 @@ export default {
         title: 'Accelerator Table',
         description:
           'Additional cost savings when mats are used on different locations.',
-        tableHeader: ['Accelerator', '3 Years', '5 Years', '10 Years'],
+        tableHeader: ['Mats Moved', '3 Year Savings', '5 Year Savings', '10 Year Savings'],
         tableRows: [
           ['1x/year', '10,000 USD', '50,000 USD', '100,000 USD'],
           ['3x/year', '30,000 USD', '150,000 USD', '300,000 USD'],
