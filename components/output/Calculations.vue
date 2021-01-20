@@ -211,13 +211,13 @@ export default {
       return [
         [
           '1x / year',
-          `${
+          (`${
             -Math.floor(
               this.costsFODS -
                 this.rocksMoveCost * 3 -
                 (this.rocksCost / projectLength) * 36
             ) || 0
-          }`.toLocaleString(),
+          }`).toLocaleString(),
           `${
             -Math.floor(
               this.costsFODS -
