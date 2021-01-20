@@ -183,7 +183,7 @@ export default {
           `${
             -Math.floor(
               this.costsFODS - (this.rocksCost / projectLength) * 60
-            ).toFixed(2) || 0
+            ).toLocaleString() || 0
           } USD`,
         ],
         [
@@ -191,7 +191,7 @@ export default {
           `${
             -Math.floor(
               this.costsFODS - (this.rocksCost / projectLength) * 120
-            ).toFixed(2) || 0
+            ).toLocaleString() || 0
           } USD`,
         ],
       ]
@@ -223,14 +223,14 @@ export default {
               this.costsFODS -
                 this.rocksMoveCost * 5 -
                 (this.rocksCost / projectLength) * 60
-            ).toFixed(2) || 0
+            ).toLocaleString() || 0
           } USD`,
           `${
             -Math.floor(
               this.costsFODS -
                 this.rocksMoveCost * 10 -
                 (this.rocksCost / projectLength) * 120 // this is the line
-            ).toFixed(2) || 0
+            ).toLocaleString() || 0
           } USD`,
         ],
         [
@@ -240,21 +240,21 @@ export default {
               this.costsFODS -
                 this.rocksMoveCost * 9 -
                 (this.rocksCost / projectLength) * 36
-            ).toFixed(2) || 0
+            ).toLocaleString() || 0
           } USD`,
           `${
             -Math.floor(
               this.costsFODS -
                 this.rocksMoveCost * 15 -
                 (this.rocksCost / projectLength) * 60
-            ).toFixed(2) || 0
+            ).toLocaleString() || 0
           } USD`,
           `${
             -Math.floor(
               this.costsFODS -
                 this.rocksMoveCost * 30 -
                 (this.rocksCost / projectLength) * 120
-            ).toFixed(2) || 0
+            ).toLocaleString() || 0
           } USD`,
         ],
         [
@@ -264,21 +264,21 @@ export default {
               this.costsFODS -
                 this.rocksMoveCost * 15 -
                 (this.rocksCost / projectLength) * 36
-            ).toFixed(2) || 0
+            ).toLocaleString() || 0
           } USD`,
           `${
             -Math.floor(
               this.costsFODS -
                 this.rocksMoveCost * 25 -
                 (this.rocksCost / projectLength) * 60
-            ).toFixed(2) || 0
+            ).toLocaleString() || 0
           } USD`,
           `${
             -Math.floor(
               this.costsFODS -
                 this.rocksMoveCost * 50 -
                 (this.rocksCost / projectLength) * 120
-            ).toFixed(2) || 0
+            ).toLocaleString() || 0
           } USD`,
         ],
         [
@@ -288,21 +288,21 @@ export default {
               this.costsFODS -
                 this.rocksMoveCost * 30 -
                 (this.rocksCost / projectLength) * 36
-            ).toFixed(2) || 0
+            ).toLocaleString() || 0
           } USD`,
           `${
             -Math.floor(
               this.costsFODS -
                 this.rocksMoveCost * 50 -
                 (this.rocksCost / projectLength) * 60
-            ).toFixed(2) || 0
+            ).toLocaleString() || 0
           } USD`,
           `${
             -Math.floor(
               this.costsFODS -
                 this.rocksMoveCost * 100 -
                 (this.rocksCost / projectLength) * 120
-            ).toFixed(2) || 0
+            ).toLocaleString() || 0
           } USD`,
         ],
       ]
