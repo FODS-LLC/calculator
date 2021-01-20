@@ -2,7 +2,7 @@
   <div class="flex items-center justify-center">
     <div class="font-bold font-nexa-bold w-360">
       <p class="mb-4">
-        Break even point based on national average installation and manteinance
+        Break even point based on national average installation and maintenance
         cost.
       </p>
       <div class="flex content-center">

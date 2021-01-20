@@ -216,8 +216,8 @@ export default {
               this.costsFODS -
                 this.rocksMoveCost * 3 -
                 (this.rocksCost / projectLength) * 36
-            ).toLocaleString() || 0
-          } USD`,
+            ) || 0
+          }.toLocaleString() USD`,
           `${
             -Math.floor(
               this.costsFODS -
