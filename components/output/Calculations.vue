@@ -210,7 +210,7 @@ export default {
       )
       return [
         [
-          '1x / year',
+          '1x per year',
           (`${
             -Math.floor(
               this.costsFODS -
