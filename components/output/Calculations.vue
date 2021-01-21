@@ -42,6 +42,7 @@
 </template>
 
 <script>
+console.log(accelerator())
 export default {
   props: {
     generating: {
