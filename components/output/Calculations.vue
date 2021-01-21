@@ -218,13 +218,13 @@ export default {
                 (this.rocksCost / projectLength) * 36
             ) || 0
           }`).toLocaleString(),
-          `${
+          (`${
             -Math.floor(
               this.costsFODS -
                 this.rocksMoveCost * 5 -
                 (this.rocksCost / projectLength) * 60
-            ).toLocaleString() || 0
-          } USD`,
+            ) || 0
+          }`).toLocaleString(),
           `${
             -Math.floor(
               this.costsFODS -
