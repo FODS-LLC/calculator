@@ -23,7 +23,7 @@
           :description="TableAccel.description"
           class="w-full col-span-1 p-4 border md:w-1/2"
         />
-        <script>console.log(accelerator)</script>
+        <script>window.console.log(accelerator)</script>
 
         <div class="w-full col-span-1 p-4 overflow-hidden border md:w-1/2">
           <img
