@@ -1,10 +1,6 @@
 <template>
   <div class="flex items-center justify-center">
     <div class="font-bold font-nexa-bold w-360">
-      <p class="mb-4">
-        Break even point based on national average installation and maintenance
-        cost.
-      </p>
       <div class="flex content-center">
         <!-- <div> -->
         <p class="pt-5 font-bebas-neue-bold text-160 leading-160">ROI</p>
