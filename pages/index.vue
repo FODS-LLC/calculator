@@ -11,6 +11,7 @@
                 alt="truck"
                 class="hidden w-1/3 rounded-md h-main-content xl:block"
               />
+              <p>Recommended alternative FODS layout</p>
               <div
                 class="w-full px-8 pt-8 bg-white shadow-xl xl:min-w-600px xxl:max-w-full min-h-main-content"
               >
@@ -51,7 +52,7 @@ export default {
     return {
       Form: {
         formData: { ...this.$store.state.formData },
-        label: 'Input Calculation Values',
+        label: 'Enter the dimensions and costs for your average rock construction entrance.',
         fields: [
           {
             type: 'radio',
