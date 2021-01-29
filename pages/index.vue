@@ -12,7 +12,7 @@
                   alt="truck"
                   class="hidden w-full rounded-md h-main-content object-contain xl:block"
                 />
-                <p class="text-center">Recommended alternative FODS layout</p>
+                <p class="hidden text-center xl:block">Recommended alternative FODS layout</p>
               </div>
               <div
                 class="w-full px-8 pt-8 bg-white shadow-xl xl:min-w-600px xxl:max-w-full min-h-main-content"
@@ -58,7 +58,7 @@ export default {
         fields: [
           {
             type: 'radio',
-            label: 'Entrance Length',
+            label: 'Rock Entrance Length',
             name: 'entrance_length',
             buttons: [
               {
