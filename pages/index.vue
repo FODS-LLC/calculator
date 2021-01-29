@@ -5,13 +5,15 @@
         <Header />
         <div class="pt-2">
           <div class="pb-4">
-            <div class="flex flex-col">
-              <img
-                :src="image"
-                alt="truck"
-                class="hidden w-1/3 rounded-md h-main-content xl:block"
-              />
-              <p>Recommended alternative FODS layout</p>
+            <div class="flex">
+              <div class="flex flex-col">
+                <img
+                  :src="image"
+                  alt="truck"
+                  class="hidden w-full rounded-md h-main-content object-contain xl:block"
+                />
+                <p class="text-center">Recommended alternative FODS layout</p>
+              </div>
               <div
                 class="w-full px-8 pt-8 bg-white shadow-xl xl:min-w-600px xxl:max-w-full min-h-main-content"
               >
