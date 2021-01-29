@@ -2,7 +2,7 @@
   <div>
     <h2 class="mb-4 font-bold text-center text-22 font-nexa-bold sm:text-left">
       {{ label }}
-    </h1>
+    </h2>
     <form class="flex flex-wrap items-end justify-between">
       <div
         v-for="(field, index) in fields"

@@ -8,7 +8,7 @@
     />
     <div class="self-center col-span-1 text-center">
       <h1 class="font-bold font-nexa-bold text-mid-grey text-40 sm:text-96">
-        Calculator
+        ROI Calculator
       </h1>
     </div>
   </div>
