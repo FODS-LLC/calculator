@@ -1,5 +1,5 @@
 <template>
-  <div class="grid w-full grid-cols-3 py-5">
+  <div class="grid w-full grid-cols-header">
     <img
       src="/logo/FODS-LOG2O.png"
       alt="Logo"

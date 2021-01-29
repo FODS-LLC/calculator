@@ -44,6 +44,9 @@ module.exports = {
       gridTemplateRows: {
         layout: 'minmax(0, 1fr) 360px;',
       },
+      gridTemplateColumns: {
+        header: 'minmax(138px,200px) 1fr minmax(0px,200px);',
+      },
       height: {
         'main-content': '554px',
         'page-section': '360px',
