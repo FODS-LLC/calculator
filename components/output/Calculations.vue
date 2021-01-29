@@ -23,7 +23,6 @@
           :description="TableAccel.description"
           class="w-full col-span-1 p-4 border md:w-1/2"
         />
-        <div>accelerator</div>
 
         <div class="w-full col-span-1 p-4 overflow-hidden border md:w-1/2">
           <img
@@ -43,7 +42,6 @@
 </template>
 
 <script>
-
 export default {
   props: {
     generating: {
@@ -79,7 +77,7 @@ export default {
         title: 'Accelerator Table',
         description:
           'Additional cost savings when mats are used on different locations.',
-        tableHeader: ['Mats Moved', '3 Year Savings', '5 Year Savings', '10 Year Savings'],
+        tableHeader: ['Accelerator', '3 Years', '5 Years', '10 Years'],
         tableRows: [
           ['1x/year', '10,000 USD', '50,000 USD', '100,000 USD'],
           ['3x/year', '30,000 USD', '150,000 USD', '300,000 USD'],
@@ -176,8 +174,8 @@ export default {
           '3 Years',
           `${
             -Math.floor(
-              (this.costsFODS - (this.rocksCost / projectLength) * 36)
-            ).toLocaleString() || 0
+              this.costsFODS - (this.rocksCost / projectLength) * 36
+            ).toFixed(2) || 0
           } USD`,
         ],
         [
@@ -185,7 +183,7 @@ export default {
           `${
             -Math.floor(
               this.costsFODS - (this.rocksCost / projectLength) * 60
-            ).toLocaleString() || 0
+            ).toFixed(2) || 0
           } USD`,
         ],
         [
@@ -193,7 +191,7 @@ export default {
           `${
             -Math.floor(
               this.costsFODS - (this.rocksCost / projectLength) * 120
-            ).toLocaleString() || 0
+            ).toFixed(2) || 0
           } USD`,
         ],
       ]
@@ -212,27 +210,27 @@ export default {
       )
       return [
         [
-          '1x per year',
-          (`${
+          '1x / year',
+          `${
             -Math.floor(
               this.costsFODS -
                 this.rocksMoveCost * 3 -
                 (this.rocksCost / projectLength) * 36
-            ) || 0
-          }`).toLocaleString(),
-          (`${
+            ).toFixed(2) || 0
+          } USD`,
+          `${
             -Math.floor(
               this.costsFODS -
                 this.rocksMoveCost * 5 -
                 (this.rocksCost / projectLength) * 60
-            ) || 0
-          }`).toLocaleString(),
+            ).toFixed(2) || 0
+          } USD`,
           `${
             -Math.floor(
               this.costsFODS -
                 this.rocksMoveCost * 10 -
                 (this.rocksCost / projectLength) * 120 // this is the line
-            ).toLocaleString() || 0
+            ).toFixed(2) || 0
           } USD`,
         ],
         [
@@ -242,21 +240,21 @@ export default {
               this.costsFODS -
                 this.rocksMoveCost * 9 -
                 (this.rocksCost / projectLength) * 36
-            ).toLocaleString() || 0
+            ).toFixed(2) || 0
           } USD`,
           `${
             -Math.floor(
               this.costsFODS -
                 this.rocksMoveCost * 15 -
                 (this.rocksCost / projectLength) * 60
-            ).toLocaleString() || 0
+            ).toFixed(2) || 0
           } USD`,
           `${
             -Math.floor(
               this.costsFODS -
                 this.rocksMoveCost * 30 -
                 (this.rocksCost / projectLength) * 120
-            ).toLocaleString() || 0
+            ).toFixed(2) || 0
           } USD`,
         ],
         [
@@ -266,21 +264,21 @@ export default {
               this.costsFODS -
                 this.rocksMoveCost * 15 -
                 (this.rocksCost / projectLength) * 36
-            ).toLocaleString() || 0
+            ).toFixed(2) || 0
           } USD`,
           `${
             -Math.floor(
               this.costsFODS -
                 this.rocksMoveCost * 25 -
                 (this.rocksCost / projectLength) * 60
-            ).toLocaleString() || 0
+            ).toFixed(2) || 0
           } USD`,
           `${
             -Math.floor(
               this.costsFODS -
                 this.rocksMoveCost * 50 -
                 (this.rocksCost / projectLength) * 120
-            ).toLocaleString() || 0
+            ).toFixed(2) || 0
           } USD`,
         ],
         [
@@ -290,21 +288,21 @@ export default {
               this.costsFODS -
                 this.rocksMoveCost * 30 -
                 (this.rocksCost / projectLength) * 36
-            ).toLocaleString() || 0
+            ).toFixed(2) || 0
           } USD`,
           `${
             -Math.floor(
               this.costsFODS -
                 this.rocksMoveCost * 50 -
                 (this.rocksCost / projectLength) * 60
-            ).toLocaleString() || 0
+            ).toFixed(2) || 0
           } USD`,
           `${
             -Math.floor(
               this.costsFODS -
                 this.rocksMoveCost * 100 -
                 (this.rocksCost / projectLength) * 120
-            ).toLocaleString() || 0
+            ).toFixed(2) || 0
           } USD`,
         ],
       ]
