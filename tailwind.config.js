@@ -69,6 +69,10 @@ module.exports = {
         380: '380px',
         '600px': '600px',
       },
+      maxWidth: {
+        380: '380px',
+        '600px': '600px',
+      },
 
       spacing: {
         68: '17em',
