@@ -23,6 +23,7 @@
           :description="TableAccel.description"
           class="w-full col-span-1 p-4 border md:w-1/2"
         />
+        <div>accelerator</div>
 
         <div class="w-full col-span-1 p-4 overflow-hidden border md:w-1/2">
           <img
@@ -77,7 +78,7 @@ export default {
       TableAccel: {
         title: 'Accelerator Table',
         description:
-          'FODS cost savings really add up when you move the mats either within the project or to new projects!',
+          'Additional cost savings when mats are used on different locations.',
         tableHeader: ['Mats Moved', '3 Year Savings', '5 Year Savings', '10 Year Savings'],
         tableRows: [
           ['1x/year', '10,000 USD', '50,000 USD', '100,000 USD'],
@@ -87,7 +88,7 @@ export default {
         ],
       },
       TableCost: {
-        title: 'FODS Cost Savings Table',
+        title: 'Cost Savings Table',
         description: '',
         tableHeader: ['Time', 'Savings'],
         tableRows: [
