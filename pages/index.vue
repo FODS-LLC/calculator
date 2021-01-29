@@ -5,7 +5,7 @@
         <Header />
         <div class="pt-2">
           <div class="pb-4">
-            <div class="flex">
+            <div class="flex flex-col">
               <img
                 :src="image"
                 alt="truck"
