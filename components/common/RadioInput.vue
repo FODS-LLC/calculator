@@ -1,11 +1,11 @@
 <template>
   <div :class="computedContainerClasses" class="w-full">
     <p class="block mb-3 font-bold text-center sm:text-left">{{ label }}:</p>
-    <div class="flex flex-wrap justify-start space-x-2 space-y-2">
-      <div v-for="(button, index) in buttons" :key="index" class="relative">
+    <div class="flex flex-wrap justify-start space-x-2-disable mt-2 mr-2">
+      <div v-for="(button, index) in buttons" :key="index" class="flex-grow flex-shrink-0 relative">
         <label
           :for="button.label"
-          :class="`px-3 rounded-sm duration-100 py-3 font-bold font-nexa-bold cursor-pointer whitespace-no-wrap text-15px hover:bg-dove-gray hover:text-white inline-block ${
+          :class="`text-center w-full px-3 rounded-sm duration-100 py-3 font-bold font-nexa-bold cursor-pointer whitespace-no-wrap text-15px hover:bg-dove-gray hover:text-white inline-block ${
             selected === button.value
               ? 'bg-dove-gray text-white'
               : 'bg-gray-100 text-input-text-gray'
