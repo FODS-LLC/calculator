@@ -76,7 +76,7 @@ export default {
       TableAccel: {
         title: 'Accelerator Table',
         description:
-          'Additional cost savings when mats are used on different locations.',
+          'FODS cost savings really add up when you move the mats either within the project or to new projects.',
         tableHeader: ['Accelerator', '3 Years', '5 Years', '10 Years'],
         tableRows: [
           ['1x/year', '10,000 USD', '50,000 USD', '100,000 USD'],
@@ -86,7 +86,7 @@ export default {
         ],
       },
       TableCost: {
-        title: 'Cost Savings Table',
+        title: 'FODS Cost Savings Table',
         description: '',
         tableHeader: ['Time', 'Savings'],
         tableRows: [
