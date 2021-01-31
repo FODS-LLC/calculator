@@ -20,13 +20,11 @@ export const mutations = {
   printToConsole(state, newForm) {
     console.log("state.formData.entrance_length")
     console.log(state.formData.entrance_length)
-    console.log('Form')
-    console.log(newForm)
-    console.log('State')
-    console.log(state.formData)
   },
   updateForm(state, newForm) {
     state.formData = { ...state.formData, ...newForm }
+    console.log("updated state.formData.entrance_length")
+    console.log(state.formData.entrance_length)
   },
   updateField(state, { field, value }) {
     state.formData[field] = value
