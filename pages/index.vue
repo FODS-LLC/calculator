@@ -167,6 +167,7 @@ export default {
 
       this.Form.formData.pdfurl = ''
       this.$store.commit('updateForm', this.Form.formData)
+      this.$store.commit('updateField', this.Form.formData)
       this.$axios
         .post('https://getfods-api.herokuapp.com/entries', {
           ...this.$store.state.formData,
