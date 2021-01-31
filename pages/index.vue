@@ -63,7 +63,7 @@ export default {
             buttons: [
               {
                 label: "35'",
-                value: 35,
+                value: '35',
               },
               {
                 label: "50'",
@@ -75,7 +75,7 @@ export default {
               },
               {
                 label: "100'",
-                value: 100,
+                value: '100',
               },
             ],
           },
@@ -145,19 +145,17 @@ export default {
       ]
       const item = this.$store.state.formData.entrance_length
       if (item === '70' || item === '50') {
-        console.log(this.$store.state.formData.entrance_length)
         return items[1]
       }
       if (item === '100') {
-        console.log(this.$store.state.formData.entrance_length)
         return items[2]
       }
-      console.log(this.$store.state.formData.entrance_length)
       return items[0]
     },
   },
   methods: {
     submit() {
+      console.log(this.Form.formData)
       this.Form.formData.pdfurl = ''
       this.$store.commit('updateForm', this.Form.formData)
       this.$axios
