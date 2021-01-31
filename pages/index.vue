@@ -155,7 +155,8 @@ export default {
   },
   methods: {
     submit() {
-      console.log(this.Form.formData)
+      console.log("store " + this.$store.state.formData.entrance_length)
+      console.log("this " + this.Form.formData.entrance_length)
       this.Form.formData.pdfurl = ''
       this.$store.commit('updateForm', this.Form.formData)
       this.$axios
