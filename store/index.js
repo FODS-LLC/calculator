@@ -18,10 +18,12 @@ export const state = () => ({
 
 export const mutations = {
   printToConsole(state, newForm) {
+    console.log("this.$store.state.formData.entrance_length")
+    console.log(this.$store.state.formData.entrance_length)
     console.log('Form')
     console.log(newForm)
     console.log('State')
-    console.log(state)
+    console.log(state.formData)
   },
   updateForm(state, newForm) {
     state.formData = { ...state.formData, ...newForm }
