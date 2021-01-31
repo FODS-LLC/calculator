@@ -169,22 +169,20 @@ export default {
       const projectLength = parseInt(
         this.$store.state.formData.length_of_project
       )
+      const year5 = (Math.floor(this.costsFODS - (this.rocksCost / projectLength) * 60) || 0)
+
       return [
         [
           '3 Years',
           `${
-            -Math.floor((
+            -Math.floor(
               this.costsFODS - (this.rocksCost / projectLength) * 36
-            ) || 0).toLocaleString()
+            ) || 0
           } USD`,
         ],
         [
           '5 Years',
-          `${
-            -Math.floor(
-              this.costsFODS - (this.rocksCost / projectLength) * 60
-            ).toLocaleString("en-US") || 0
-          } USD`,
+          `${year5.toLocaleString()} USD`,
         ],
         [
           '10 Years',
