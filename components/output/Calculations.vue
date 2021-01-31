@@ -132,7 +132,6 @@ export default {
     },
     matsNumber() {
       const length = parseInt(this.$store.state.formData.entrance_length)
-      console.log(length)
       if (length === 35) return 4
       else if (length === 70 || length === 50) return 6
       return 8

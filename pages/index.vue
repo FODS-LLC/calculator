@@ -63,7 +63,7 @@ export default {
             buttons: [
               {
                 label: "35'",
-                value: '35',
+                value: 35,
               },
               {
                 label: "50'",
@@ -75,7 +75,7 @@ export default {
               },
               {
                 label: "100'",
-                value: '100',
+                value: 100,
               },
             ],
           },
