@@ -157,8 +157,8 @@ export default {
     submit() {
       this.Form.formData.pdfurl = ''
       this.$store.commit('updateForm', this.Form.formData)
-      this.$store.commit('updateField', (entrance_length, this.Form.formData.entrance_length.value) )
-      this.$store.commit('updateField', (refresh_frequency, this.Form.formData.refresh_frequency.value) )
+      this.$store.commit('updateField', ('entrance_length', this.Form.formData.entrance_length.value) )
+      this.$store.commit('updateField', ('refresh_frequency', this.Form.formData.refresh_frequency.value) )
       this.$axios
         .post('https://getfods-api.herokuapp.com/entries', {
           ...this.$store.state.formData,
