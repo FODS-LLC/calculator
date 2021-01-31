@@ -173,9 +173,9 @@ export default {
         [
           '3 Years',
           `${
-            -Math.floor(
+            -Math.floor((
               this.costsFODS - (this.rocksCost / projectLength) * 36
-            ).toLocaleString() || 0
+            ) || 0).toLocaleString()
           } USD`,
         ],
         [

@@ -28,7 +28,6 @@ export const mutations = {
     state.formData.refresh_frequency = refresh_frequency
   },
   updateField(state, { field, value }) {
-    console.log(value)
     state.formData[field] = value
   },
   setStartGenerate(state, val) {
