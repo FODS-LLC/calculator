@@ -18,20 +18,15 @@ export const state = () => ({
 
 export const mutations = {
   updateForm(state, newForm) {
-    var entrance_length = state.formData.entrance_length
-    var length_of_project = state.formData.length_of_project
-
-    state.formData.entrance_length = entrance_length
-
-    console.log(state.formData.entrance_length)
+    //var entrance_length = state.formData.entrance_length
+    //var length_of_project = state.formData.length_of_project
+    //state.formData.entrance_length = entrance_length
+    console.log(" proj" + state.formData.length_of_project)
 
     state.formData = { ...state.formData, ...newForm }
-
-    state.formData.entrance_length = entrance_length
-    state.formData.length_of_project = length_of_project
-
-    console.log("updated state.formData.entrance_length")
-    console.log(state.formData.entrance_length)
+    console.log("updated proj" + state.formData.length_of_project)
+    //state.formData.entrance_length = entrance_length
+    //state.formData.length_of_project = length_of_project
   },
   updateField(state, { field, value }) {
     state.formData[field] = value
