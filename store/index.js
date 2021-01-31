@@ -19,7 +19,7 @@ export const state = () => ({
 export const mutations = {
   updateForm(state, newForm) {
     var entrance_length = state.formData.entrance_length
-    var project_length = state.formData.length_of_project
+    var length_of_project = state.formData.length_of_project
 
     state.formData.entrance_length = entrance_length
 
