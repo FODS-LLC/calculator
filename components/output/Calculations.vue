@@ -163,8 +163,8 @@ export default {
       const projectLength = parseInt(
         this.$store.state.formData.length_of_project
       )
-      //return Math.floor(this.costsFODS / (this.rocksCost / projectLength))
-      return console.log("this.costFODS: " + this.costsFODS + "\nthis.rocksCost: " + this.rocksCost + "\nprojectLength: " + projectLength)
+      return Math.floor(this.costsFODS / (this.rocksCost / projectLength))
+      //return console.log("this.costFODS: " + this.costsFODS + "\nthis.rocksCost: " + this.rocksCost + "\nprojectLength: " + projectLength)
     },
     costSavings() {
       const projectLength = parseInt(
@@ -176,7 +176,7 @@ export default {
           `${
             -Math.floor(
               this.costsFODS - (this.rocksCost / projectLength) * 36
-            ).toFixed(2) || 0
+            ).toLocaleString() || 0
           } USD`,
         ],
         [
@@ -184,7 +184,7 @@ export default {
           `${
             -Math.floor(
               this.costsFODS - (this.rocksCost / projectLength) * 60
-            ).toFixed(2) || 0
+            ).toLocaleString() || 0
           } USD`,
         ],
         [
@@ -192,7 +192,7 @@ export default {
           `${
             -Math.floor(
               this.costsFODS - (this.rocksCost / projectLength) * 120
-            ).toFixed(2) || 0
+            ).toLocaleString() || 0
           } USD`,
         ],
       ]
