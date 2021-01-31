@@ -27,7 +27,7 @@ export const mutations = {
     //state.formData.entrance_length = entrance_length
     //state.formData.refresh_frequency = refresh_frequency
   },
-  updateField(state, { field: value }) {
+  updateField(state, ( field, value )) {
     state.formData[field] = value
   },
   setStartGenerate(state, val) {
