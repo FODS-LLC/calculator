@@ -145,11 +145,14 @@ export default {
       ]
       const item = this.$store.state.formData.entrance_length
       if (item === '70' || item === '50') {
+        console.log(this.$store.state.formData.entrance_length)
         return items[1]
       }
       if (item === '100') {
+        console.log(this.$store.state.formData.entrance_length)
         return items[2]
       }
+      console.log(this.$store.state.formData.entrance_length)
       return items[0]
     },
   },
