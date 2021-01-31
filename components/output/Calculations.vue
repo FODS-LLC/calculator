@@ -132,6 +132,7 @@ export default {
     },
     matsNumber() {
       const length = parseInt(this.$store.state.formData.entrance_length)
+      console.log(length)
       if (length === 35) return 4
       else if (length === 70 || length === 50) return 6
       return 8
@@ -164,7 +165,6 @@ export default {
         this.$store.state.formData.length_of_project
       )
       return Math.floor(this.costsFODS / (this.rocksCost / projectLength))
-      //return console.log("this.costFODS: " + this.costsFODS + "\nthis.rocksCost: " + this.rocksCost + "\nprojectLength: " + projectLength)
     },
     costSavings() {
       const projectLength = parseInt(
