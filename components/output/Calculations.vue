@@ -175,7 +175,7 @@ export default {
           `${
             -Math.floor(
               this.costsFODS - (this.rocksCost / projectLength) * 36
-            ).toFixed(2) || 0
+            ).toLocaleString() || 0
           } USD`,
         ],
         [
