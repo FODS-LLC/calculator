@@ -160,8 +160,8 @@ export default {
       console.log("freq store " + this.$store.state.formData.refresh_frequency)
       console.log("freq this " + this.Form.formData.refresh_frequency)
 
-      console.log("store\n" + this.$store.stateformData)
-      console.log("form\n" + this.Form.formData)
+      console.log(this.$store.state.formData)
+      console.log(this.Form.formData)
 
       this.Form.formData.pdfurl = ''
       this.$store.commit('updateForm', this.Form.formData)

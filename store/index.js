@@ -17,6 +17,12 @@ export const state = () => ({
 })
 
 export const mutations = {
+  printToConsole(state, newForm) {
+    console.log('Form')
+    console.log(newForm)
+    console.log('State')
+    console.log(state)
+  },
   updateForm(state, newForm) {
     state.formData = { ...state.formData, ...newForm }
   },
