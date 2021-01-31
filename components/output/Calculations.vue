@@ -163,7 +163,7 @@ export default {
       const projectLength = parseInt(
         this.$store.state.formData.length_of_project
       )
-      return Math.floor(this.costsFODS / (this.rocksCost / projectLength))
+      //return Math.floor(this.costsFODS / (this.rocksCost / projectLength))
     },
     costSavings() {
       const projectLength = parseInt(
