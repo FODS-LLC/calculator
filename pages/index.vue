@@ -160,6 +160,8 @@ export default {
       console.log("freq store " + this.$store.state.formData.refresh_frequency)
       console.log("freq this " + this.Form.formData.refresh_frequency)
 
+      this.$store.commit("printToConsole", this.Form.formData)
+
       console.log(this.$store.state.formData)
       console.log(this.Form.formData)
 
