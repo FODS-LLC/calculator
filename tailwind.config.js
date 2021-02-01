@@ -95,6 +95,9 @@ module.exports = {
       inset: {
         '21.6': '5.4rem',
       },
+      paddingTop: {
+        '20px': '20px',
+      },
     },
   },
   variants: {
