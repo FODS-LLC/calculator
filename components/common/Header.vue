@@ -3,7 +3,7 @@
     <img
       src="/logo/FODS-LOG2O.png"
       alt="Logo"
-      class="col-span-1 object-contain mx-2 my-6 w-logo h-full cursor-pointer"
+      class="object-contain mx-4 mb-4 w-logo h-full cursor-pointer"
       @click="goToHomePage()"
     />
     <div class="self-center xl:m-auto sm:ml-0 sm:mr-auto text-center">
