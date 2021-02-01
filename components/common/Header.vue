@@ -6,7 +6,7 @@
       class="col-span-1 mx-2 my-6 w-logo cursor-pointer"
       @click="goToHomePage()"
     />
-    <div class="self-center col-span-1 text-center">
+    <div class="self-center m-auto col-span-2 text-center">
       <h1 class="font-bold font-bebas-neue-bold text-mid-grey text-40 sm:text-96">
         ROI Calculator
       </h1>
