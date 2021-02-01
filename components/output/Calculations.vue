@@ -176,15 +176,15 @@ export default {
       return [
         [
           '3 Years',
-          `\$ ${savingsYear3.toLocaleString("en-US")} USD`,
+          `\$${savingsYear3.toLocaleString("en-US")} USD`,
         ],
         [
           '5 Years',
-          `\$ ${savingsYear5.toLocaleString("en-US")} USD`,
+          `\$${savingsYear5.toLocaleString("en-US")} USD`,
         ],
         [
           '10 Years',
-          `\$ ${savingsYear10.toLocaleString("en-US")} USD`,
+          `\$${savingsYear10.toLocaleString("en-US")} USD`,
         ],
       ]
     },
@@ -204,42 +204,42 @@ export default {
       const acceleratorYear5x1 = (-Math.floor(this.costsFODS - this.rocksMoveCost * 5 - (this.rocksCost / projectLength) * 60) || 0)
       const acceleratorYear10x1 = (-Math.floor(this.costsFODS - this.rocksMoveCost * 10 - (this.rocksCost / projectLength) * 120) || 0)
 
-      const acceleratorYear3x3 = (-Math.floor(this.costsFODS - this.rocksMoveCost * 3 - (this.rocksCost / projectLength) * 36) || 0)
-      const acceleratorYear5x3 = (-Math.floor(this.costsFODS - this.rocksMoveCost * 5 - (this.rocksCost / projectLength) * 60) || 0)
-      const acceleratorYear10x3 = (-Math.floor(this.costsFODS - this.rocksMoveCost * 10 - (this.rocksCost / projectLength) * 120) || 0)
+      const acceleratorYear3x3 = (-Math.floor(this.costsFODS - this.rocksMoveCost * 9 - (this.rocksCost / projectLength) * 36) || 0)
+      const acceleratorYear5x3 = (-Math.floor(this.costsFODS - this.rocksMoveCost * 15 - (this.rocksCost / projectLength) * 60) || 0)
+      const acceleratorYear10x3 = (-Math.floor(this.costsFODS - this.rocksMoveCost * 30 - (this.rocksCost / projectLength) * 120) || 0)
 
-      const acceleratorYear3x5 = (-Math.floor(this.costsFODS - this.rocksMoveCost * 3 - (this.rocksCost / projectLength) * 36) || 0)
-      const acceleratorYear5x5 = (-Math.floor(this.costsFODS - this.rocksMoveCost * 5 - (this.rocksCost / projectLength) * 60) || 0)
-      const acceleratorYear10x5 = (-Math.floor(this.costsFODS - this.rocksMoveCost * 10 - (this.rocksCost / projectLength) * 120) || 0)
+      const acceleratorYear3x5 = (-Math.floor(this.costsFODS - this.rocksMoveCost * 15 - (this.rocksCost / projectLength) * 36) || 0)
+      const acceleratorYear5x5 = (-Math.floor(this.costsFODS - this.rocksMoveCost * 25 - (this.rocksCost / projectLength) * 60) || 0)
+      const acceleratorYear10x5 = (-Math.floor(this.costsFODS - this.rocksMoveCost * 50 - (this.rocksCost / projectLength) * 120) || 0)
 
-      const acceleratorYear3x10 = (-Math.floor(this.costsFODS - this.rocksMoveCost * 3 - (this.rocksCost / projectLength) * 36) || 0)
-      const acceleratorYear5x10 = (-Math.floor(this.costsFODS - this.rocksMoveCost * 5 - (this.rocksCost / projectLength) * 60) || 0)
-      const acceleratorYear10x10 = (-Math.floor(this.costsFODS - this.rocksMoveCost * 10 - (this.rocksCost / projectLength) * 120) || 0)
+      const acceleratorYear3x10 = (-Math.floor(this.costsFODS - this.rocksMoveCost * 30 - (this.rocksCost / projectLength) * 36) || 0)
+      const acceleratorYear5x10 = (-Math.floor(this.costsFODS - this.rocksMoveCost * 50 - (this.rocksCost / projectLength) * 60) || 0)
+      const acceleratorYear10x10 = (-Math.floor(this.costsFODS - this.rocksMoveCost * 100 - (this.rocksCost / projectLength) * 120) || 0)
       
       return [
         [
           '1x / year',
-          `\$ ${acceleratorYear3x1.toLocaleString("en-US")} USD`,
-          `\$ ${acceleratorYear5x1.toLocaleString("en-US")} USD`,
-          `\$ ${acceleratorYear10x1.toLocaleString("en-US")} USD`,
+          `\$${acceleratorYear3x1.toLocaleString("en-US")} USD`,
+          `\$${acceleratorYear5x1.toLocaleString("en-US")} USD`,
+          `\$${acceleratorYear10x1.toLocaleString("en-US")} USD`,
         ],
         [
           '3x / year',
-          `\$ ${acceleratorYear3x3.toLocaleString("en-US")} USD`,
-          `\$ ${acceleratorYear5x3.toLocaleString("en-US")} USD`,
-          `\$ ${acceleratorYear10x3.toLocaleString("en-US")} USD`,
+          `\$${acceleratorYear3x3.toLocaleString("en-US")} USD`,
+          `\$${acceleratorYear5x3.toLocaleString("en-US")} USD`,
+          `\$${acceleratorYear10x3.toLocaleString("en-US")} USD`,
         ],
         [
           '5x / year',
-          `\$ ${acceleratorYear3x5.toLocaleString("en-US")} USD`,
-          `\$ ${acceleratorYear5x5.toLocaleString("en-US")} USD`,
-          `\$ ${acceleratorYear10x5.toLocaleString("en-US")} USD`,
+          `\$${acceleratorYear3x5.toLocaleString("en-US")} USD`,
+          `\$${acceleratorYear5x5.toLocaleString("en-US")} USD`,
+          `\$${acceleratorYear10x5.toLocaleString("en-US")} USD`,
         ],
         [
           '10x / year',
-          `\$ ${acceleratorYear3x10.toLocaleString("en-US")} USD`,
-          `\$ ${acceleratorYear5x10.toLocaleString("en-US")} USD`,
-          `\$ ${acceleratorYear10x10.toLocaleString("en-US")} USD`,
+          `\$${acceleratorYear3x10.toLocaleString("en-US")} USD`,
+          `\$${acceleratorYear5x10.toLocaleString("en-US")} USD`,
+          `\$${acceleratorYear10x10.toLocaleString("en-US")} USD`,
         ],
       ]
     },
