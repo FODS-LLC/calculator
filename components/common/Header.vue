@@ -1,12 +1,12 @@
 <template>
-  <div class="flex w-full">
+  <div class="flex w-full py-4">
     <img
       src="/logo/FODS-LOG2O.png"
       alt="Logo"
-      class="object-contain mx-4 mb-4 w-logo h-full cursor-pointer"
+      class="object-contain mx-4 my-auto w-logo h-full cursor-pointer"
       @click="goToHomePage()"
     />
-    <div class="self-center xl:m-auto sm:ml-0 sm:mr-auto text-center">
+    <div class="self-center xl:m-auto my-auto sm:ml-0 sm:mr-auto text-center">
       <h1 class="font-bold font-bebas-neue-bold text-mid-grey text-40 sm:text-64 xl:text-96">
         ROI Calculator
       </h1>
