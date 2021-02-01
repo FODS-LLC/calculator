@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2 class="mb-4 font-bold text-center text-22 font-nexa-bold sm:text-left">
+    <h2 class="mb-4 font-bold text-center text-22 font-helvetica-neue sm:text-left">
       {{ label }}
     </h2>
     <form class="flex flex-wrap items-end justify-between">

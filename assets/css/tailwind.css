@@ -32,3 +32,9 @@
     font-style: normal;
     font-stretch: 1% 500%; /* Required by Chrome */
   }
+  @font-face {
+    font-family: "Helvetica Neue";
+    src: url(/fonts/Helvetica-Neue.otf);
+    font-style: normal;
+    font-stretch: 1% 500%; /* Required by Chrome */
+  }
