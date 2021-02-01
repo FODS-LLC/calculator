@@ -30,7 +30,7 @@ module.exports = {
         'bebas-neue-bold': ['BebasNeue-Bold', 'sans-serif'],
         'nexa-bold': ['Nexa-Bold', 'sans-serif'],
         'nexa-lite': ['Nexa-Lite', 'sans-serif'],
-        'helvetica-neue': ["Hevetica-Neue', 'sans-serif'],
+        'helvetica-neue': ['Hevetica-Neue', 'sans-serif'],
       },
       fontSize: {
         160: '160px',
