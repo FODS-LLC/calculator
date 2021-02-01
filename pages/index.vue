@@ -12,7 +12,7 @@
                   alt="truck"
                   class="hidden w-full rounded-md h-main-content object-contain xl:block"
                 />
-                <p class="hidden text-center xl:block max-w-80">Recommended alternative FODS layout.</p>
+                <p class="hidden text-center xl:block w-9/12 m-auto">FODS Recommended Alternative Layout</p>
               </div>
               <div
                 class="w-full px-8 pt-8 bg-white shadow-xl xl:min-w-600px xxl:max-w-full min-h-main-content"
