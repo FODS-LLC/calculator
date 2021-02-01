@@ -7,7 +7,7 @@
       @click="goToHomePage()"
     />
     <div class="self-center col-span-1 text-center">
-      <h1 class="font-bold font-family-beba-neue-bold beba-neue-bold text-mid-grey text-40 sm:text-96">
+      <h1 class="font-bold font-bebas-neue-bold text-mid-grey text-40 sm:text-96">
         ROI Calculator
       </h1>
     </div>
