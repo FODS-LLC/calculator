@@ -1,7 +1,7 @@
 <template>
   <div :class="computedContainerClasses" class="sm:w-5/6 w-full">
-    <p class="block mb-3 font-bold text-center sm:text-left">{{ label }}:</p>
-    <div class="flex justify-start space-x-2-disable">
+    <p class="block font-bold text-left">{{ label }}:</p>
+    <div class="flex flex-wrap sm:flex-nowrap justify-start space-x-2-disable">
       <div v-for="(button, index) in buttons" :key="index" class="flex-grow flex-shrink-0 relative mt-2 mr-2">
         <label
           :for="button.label"

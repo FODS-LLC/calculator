@@ -1,7 +1,7 @@
 <template>
   <button
     :class="computedContainerClasses"
-    class="text-center border border-solid w-284 button-border hover:shadow-xl active:shadow h-60 font-nexa-bold"
+    class="text-center border border-solid w-full sm:w-284 button-border hover:shadow-xl active:shadow h-60 font-nexa-bold"
     @click="onClick"
   >
     {{ label }}
