@@ -1,5 +1,5 @@
 <template>
-  <div class="asdf">
+  <div>
     <div class="container mx-auto">
       <div class="flex flex-col items-center w-10/12 mx-auto">
         <Header />
