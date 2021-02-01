@@ -15,7 +15,7 @@
                 <p class="hidden text-center xl:block w-9/12 m-auto">FODS Recommended Alternative Layout</p>
               </div>
               <div
-                class="w-full px-8 pt-8 bg-white shadow-xl xl:min-w-600px xxl:max-w-full min-h-main-content"
+                class="sm:w-full px-8 pt-8 bg-white shadow-xl xl:min-w-600px xxl:max-w-full min-h-main-content w-90vw m-auto sm:m-0"
               >
                 <GenericForm
                   :form-data="Form.formData"

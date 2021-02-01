@@ -92,6 +92,7 @@ module.exports = {
         284: '284px',
         logo: '127px',
         '24px': '24px',
+        '90vw': '90vw'
       },
       inset: {
         '21.6': '5.4rem',

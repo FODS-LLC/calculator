@@ -1,5 +1,5 @@
 <template>
-  <div :class="computedContainerClasses" class="w-5/6">
+  <div :class="computedContainerClasses" class="w-full sm:w-5/6">
     <label :for="name"
       ><span class="block mb-1 font-bold">{{ label }}:</span></label
     >
