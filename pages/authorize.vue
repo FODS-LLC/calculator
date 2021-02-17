@@ -65,6 +65,7 @@ export default {
           } catch (err) {
             console.log('err', err)
             this.error = 'Incorrect code.'
+            this.message = 'message'
           }
       },
   },
