@@ -2,7 +2,7 @@
   <div class="flex items-center justify-center w-screen h-screen">
     <div class="w-11/12 p-4 bg-white shadow-2xl sm:w-1/4">
       <span class="block mb-2 text-sm text-center sm:text-base"
-        >Please type the authorization code to continue.</span
+        >Please count to three to access the ROI calculator.</span
       >
       <form @submit.prevent="authorize">
         <div>
@@ -13,6 +13,7 @@
             type="text"
             class="block w-full mx-auto form-input"
           />
+          <input class="required hpf" style="display:none"/>
         </div>
         <button
           class="w-full px-20 py-4 mt-2 uppercase bg-energy-yellow hover:opacity-75"
