@@ -31,7 +31,7 @@
               z-index: -1;
               "
           />
-          <span v-if="message" class="">{{ hpf }}</span>
+          <span v-if="message" class="">{{ message }}</span>
         </div>
         <button
           class="w-full px-20 py-4 mt-2 uppercase bg-energy-yellow hover:opacity-75"
