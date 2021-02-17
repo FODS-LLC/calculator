@@ -13,7 +13,23 @@
             type="text"
             class="block w-full mx-auto form-input"
           />
-          <input class="required hpf" style="display:none"/>
+          <input 
+          class="hpf" 
+          autocomplete="off" 
+          type="text" 
+          id="name" 
+          name="name" 
+          placeholder="Your name here" 
+          style="
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 0;
+            width: 0;
+            z-index: -1;
+            "
+          />
         </div>
         <button
           class="w-full px-20 py-4 mt-2 uppercase bg-energy-yellow hover:opacity-75"
