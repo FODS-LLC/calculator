@@ -52,7 +52,7 @@ export default {
   methods: {
       async authorize() {
         this.error = ''
-        console.log(this)
+        if ((this.code.length) == 0) {
           try {
             await this.$axios.post('https://getfods-api.herokuapp.com/checkCode', {
               code: this.code,
@@ -64,7 +64,7 @@ export default {
             console.log('err', err)
             this.error = 'Incorrect code.'
           }
-        
+        }
       },
   },
 }
