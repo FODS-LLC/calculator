@@ -67,6 +67,10 @@ export default {
             this.error = 'Incorrect code.'
           }
         }
+        else {
+          console.log(hpf)
+          console.log(this.name)
+        }
       },
   },
 }
