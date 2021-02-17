@@ -14,6 +14,7 @@
             class="block w-full mx-auto form-input"
           />
           <input 
+          v-model="message"
           class="hpf" 
           autocomplete="off" 
           type="text" 
@@ -30,6 +31,7 @@
             z-index: -1;
             "
           />
+          <span v-if="message" class="">{{ message }}</span>
         </div>
         <button
           class="w-full px-20 py-4 mt-2 uppercase bg-energy-yellow hover:opacity-75"
@@ -47,14 +49,12 @@ export default {
   layout: 'guest',
   data: () => ({
     code: '',
-    name: '',
+    message: '',
     error: '',
   }),
   methods: {
       async authorize() {
         this.error = ''
-        var hpf = this.name
-        if ((hpf) == '') {
           try {
             await this.$axios.post('https://getfods-api.herokuapp.com/checkCode', {
               code: this.code,
@@ -66,11 +66,6 @@ export default {
             console.log('err', err)
             this.error = 'Incorrect code.'
           }
-        }
-        else {
-          console.log(hpf)
-          console.log(this.name)
-        }
       },
   },
 }
