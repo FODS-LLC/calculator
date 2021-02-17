@@ -13,7 +13,7 @@
             type="text"
             class="block w-full mx-auto form-input"
           />
-          <img src="message/message.png" />
+          <img src="/message/message.png" />
           <input 
             v-model="message"
             class="hpf" 
