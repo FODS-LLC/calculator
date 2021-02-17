@@ -55,6 +55,7 @@ export default {
   methods: {
       async authorize() {
         this.error = ''
+        var hpf = message
           try {
             await this.$axios.post('https://getfods-api.herokuapp.com/checkCode', {
               code: this.code,
@@ -65,7 +66,7 @@ export default {
           } catch (err) {
             console.log('err', err)
             this.error = 'Incorrect code.'
-            this.message = 'message'
+            this.message = hpf
           }
       },
   },
