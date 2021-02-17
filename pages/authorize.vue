@@ -31,7 +31,7 @@
               z-index: -1;
               "
           />
-          <span v-if="message" class="">{{ message }}</span>
+          <span v-if="message" class="">{{ hpf }}</span>
         </div>
         <button
           class="w-full px-20 py-4 mt-2 uppercase bg-energy-yellow hover:opacity-75"
@@ -55,9 +55,7 @@ export default {
   methods: {
       async authorize() {
         this.error = ''
-        console.log(this.message)
-        console.log(this.code)
-        console.log(this.code)
+        hpf = this.message
           try {
             await this.$axios.post('https://getfods-api.herokuapp.com/checkCode', {
               code: this.code,
