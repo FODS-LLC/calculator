@@ -50,10 +50,7 @@ export default {
     error: '',
   }),
   methods: {
-    debug (event) {
-    console.log(event.target.name)
-  }
-    if (code.name.length == 0) {
+    if (this.code.name.length == 0) {
       console.log(data)
       async authorize() {
         this.error = ''
