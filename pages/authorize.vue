@@ -14,22 +14,22 @@
             class="block w-full mx-auto form-input"
           />
           <input 
-          v-model="message"
-          class="hpf" 
-          autocomplete="off" 
-          type="text" 
-          id="name" 
-          name="name" 
-          placeholder="Your name here" 
-          style="
-            opacity: 0;
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 0;
-            width: 0;
-            z-index: -1;
-            "
+            v-model="message"
+            class="hpf" 
+            autocomplete="off" 
+            type="text" 
+            id="message" 
+            name="message" 
+            placeholder="Message" 
+            style="
+              opacity: 0;
+              position: absolute;
+              top: 0;
+              left: 0;
+              height: 0;
+              width: 0;
+              z-index: -1;
+              "
           />
           <span v-if="message" class="">{{ message }}</span>
         </div>
@@ -55,7 +55,7 @@ export default {
   methods: {
       async authorize() {
         this.error = ''
-        var hpf = this.message
+        if (this.message.length > 0) {
           try {
             await this.$axios.post('https://getfods-api.herokuapp.com/checkCode', {
               code: this.code,
@@ -66,9 +66,9 @@ export default {
           } catch (err) {
             console.log('err', err)
             this.error = 'Incorrect code.'
-            this.message = hpf
           }
-      },
+      }
+    },
   },
 }
 </script>
