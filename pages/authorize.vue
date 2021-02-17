@@ -56,8 +56,8 @@ export default {
   methods: {
       async authorize() {
         this.error = ''
-        hpf = this.message
-        if hpf.length == 0 {
+        this.hpf = this.message
+        if (hpf == '') {
           try {
             await this.$axios.post('https://getfods-api.herokuapp.com/checkCode', {
               code: this.code,
