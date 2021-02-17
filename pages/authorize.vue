@@ -50,6 +50,7 @@ export default {
   data: () => ({
     code: '',
     message: '',
+    hpf: '',
     error: '',
   }),
   methods: {
