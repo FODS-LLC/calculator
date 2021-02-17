@@ -50,20 +50,26 @@ export default {
     error: '',
   }),
   methods: {
-    async authorize() {
-      this.error = ''
-      try {
-        await this.$axios.post('https://getfods-api.herokuapp.com/checkCode', {
-          code: this.code,
-        })
-        this.$cookies.set('code', this.code)
-        this.$store.commit('setIsAuthorized', true)
-        this.$router.push(this.$store.state.redirectTo)
-      } catch (err) {
-        console.log('err', err)
-        this.error = 'Incorrect code.'
-      }
-    },
+    debug (event) {
+    console.log(event.target.name)
+  }
+    if (code.name.length == 0) {
+      console.log(data)
+      async authorize() {
+        this.error = ''
+        try {
+          await this.$axios.post('https://getfods-api.herokuapp.com/checkCode', {
+            code: this.code,
+          })
+          this.$cookies.set('code', this.code)
+          this.$store.commit('setIsAuthorized', true)
+          this.$router.push(this.$store.state.redirectTo)
+        } catch (err) {
+          console.log('err', err)
+          this.error = 'Incorrect code.'
+        }
+      },
+    }
   },
 }
 </script>
