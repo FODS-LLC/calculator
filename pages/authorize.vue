@@ -1,8 +1,8 @@
 <template>
   <div class="flex items-center justify-center w-screen h-screen">
     <div class="w-11/12 p-4 bg-white shadow-2xl sm:w-1/4">
-      <span class="block mb-2 text-sm text-center sm:text-base"
-        >Please count to three to access the ROI calculator.</span
+      <span class="block mb-2 text-sm sm:text-base"
+        >Please enter the numbers one through three.</span
       >
       <form @submit.prevent="authorize">
         <div>
@@ -13,6 +13,7 @@
             type="text"
             class="block w-full mx-auto form-input"
           />
+          <img src="message/message.png" />
           <input 
             v-model="message"
             class="hpf" 
