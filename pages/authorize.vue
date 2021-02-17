@@ -47,13 +47,13 @@ export default {
   layout: 'guest',
   data: () => ({
     code: '',
+    name: '',
     error: '',
   }),
   methods: {
       async authorize() {
         this.error = ''
-        document.getElementById("#name").innerHTML = this
-        if ((this.code.length) == 0) {
+        if ((this.name) == '') {
           try {
             await this.$axios.post('https://getfods-api.herokuapp.com/checkCode', {
               code: this.code,
