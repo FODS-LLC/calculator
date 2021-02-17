@@ -55,9 +55,9 @@ export default {
   methods: {
       async authorize() {
         this.error = ''
+        console.log(this.message)
         console.log(this.code)
-        console.log(code)
-        console.log(message)
+        console.log(this.code)
           try {
             await this.$axios.post('https://getfods-api.herokuapp.com/checkCode', {
               code: this.code,
