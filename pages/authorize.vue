@@ -1,9 +1,10 @@
 <template>
   <div class="flex items-center justify-center w-screen h-screen">
     <div class="w-11/12 p-4 bg-white shadow-2xl sm:w-1/4">
-      <span class="block mb-2 text-sm sm:text-base"
-        >Please enter the numbers one through three.</span
+      <span class="inline mb-2 text-sm sm:text-base" 
+        >Enter the code below: </span
       >
+      <img class="h-6 inline-block pb-0.5" src="/drawings/message/message.png"/>
       <form @submit.prevent="authorize">
         <div>
           <input
@@ -13,7 +14,7 @@
             type="text"
             class="block w-full mx-auto form-input"
           />
-          <img src="/message/message.png" />
+          
           <input 
             v-model="message"
             class="hpf" 
