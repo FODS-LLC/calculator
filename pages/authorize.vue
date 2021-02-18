@@ -4,7 +4,7 @@
       <span class="inline mb-2 text-sm sm:text-base" 
         >Enter the code below: </span
       >
-      <img class="h-6 inline-block pb-0.5" src="/drawings/message/message.png"/>
+      <img class="h-6 inline-block mb-1 rounded-sm" src="/drawings/message/message.png"/>
       <form @submit.prevent="authorize">
         <div>
           <input
