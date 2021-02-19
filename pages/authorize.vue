@@ -4,7 +4,7 @@
       <span class="hidden inline mb-2 text-sm sm:text-base" 
         >Enter the code below: </span
       >
-      <img class="h-6 inline-block mb-2 rounded-sm" src="/drawings/message/message.png"/>
+      <img class="hidden h-6 inline-block mb-2 rounded-sm" src="/drawings/message/message.png"/>
       <form @submit.prevent="authorize">
         <div>
           <input
@@ -36,7 +36,7 @@
           <span v-if="message" class="">{{ hpf }}</span>
         </div>
         <button
-          class="w-full px-20 py-4 mt-2 uppercase bg-energy-yellow hover:opacity-75"
+          class="w-full px-20 py-4 mt-2 bg-energy-yellow hover:opacity-75"
         >
           Open the ROI Calculator.
         </button>
