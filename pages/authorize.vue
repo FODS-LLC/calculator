@@ -12,7 +12,7 @@
             placeholder="Code"
             name="code"
             type="text"
-            class="block w-full mx-auto form-input"
+            class="hidden block w-full mx-auto form-input"
           />
           
           <input 
@@ -38,7 +38,7 @@
         <button
           class="w-full px-20 py-4 mt-2 uppercase bg-energy-yellow hover:opacity-75"
         >
-          Open the ROI calculator.
+          Open the ROI Calculator.
         </button>
         <span v-if="error" class="font-bold text-red-500">{{ error }}</span>
       </form>
@@ -57,9 +57,26 @@ export default {
   }),
   methods: {
       async authorize() {
-        this.$cookies.set('code', this.code)
-        this.$store.commit('setIsAuthorized', true)
-        this.$router.push(this.$store.state.redirectTo)
+        this.error = ''
+        this.hpf = this.message
+        if (this.hpf == '') {
+          this.$cookies.set('code', this.code)
+          this.$store.commit('setIsAuthorized', true)
+          this.$router.push(this.$store.state.redirectTo)
+          if (False){
+            try {
+              await this.$axios.post('https://getfods-api.herokuapp.com/checkCode', {
+                code: this.code,
+              })
+              this.$cookies.set('code', this.code)
+              this.$store.commit('setIsAuthorized', true)
+              this.$router.push(this.$store.state.redirectTo)
+            } catch (err) {
+              console.log('err', err)
+              this.error = 'Incorrect code.'
+            }
+          }
+        }
     },
   },
 }
