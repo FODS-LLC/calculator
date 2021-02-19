@@ -1,7 +1,7 @@
 <template>
   <div class="flex items-center justify-center w-screen h-screen">
     <div class="w-11/12 p-4 bg-white shadow-2xl sm:w-1/4">
-      <span class="inline mb-2 text-sm sm:text-base" 
+      <span class="hidden inline mb-2 text-sm sm:text-base" 
         >Enter the code below: </span
       >
       <img class="h-6 inline-block mb-2 rounded-sm" src="/drawings/message/message.png"/>
@@ -38,7 +38,7 @@
         <button
           class="w-full px-20 py-4 mt-2 uppercase bg-energy-yellow hover:opacity-75"
         >
-          Authorize
+          Open the ROI calculator.
         </button>
         <span v-if="error" class="font-bold text-red-500">{{ error }}</span>
       </form>
@@ -57,26 +57,9 @@ export default {
   }),
   methods: {
       async authorize() {
-        this.error = ''
-        this.hpf = this.message
-        if (this.hpf == '') {
-          this.$cookies.set('code', this.code)
-          this.$store.commit('setIsAuthorized', true)
-          this.$router.push(this.$store.state.redirectTo)
-          if (False){
-            try {
-              await this.$axios.post('https://getfods-api.herokuapp.com/checkCode', {
-                code: this.code,
-              })
-              this.$cookies.set('code', this.code)
-              this.$store.commit('setIsAuthorized', true)
-              this.$router.push(this.$store.state.redirectTo)
-            } catch (err) {
-              console.log('err', err)
-              this.error = 'Incorrect code.'
-            }
-          }
-        }
+        this.$cookies.set('code', this.code)
+        this.$store.commit('setIsAuthorized', true)
+        this.$router.push(this.$store.state.redirectTo)
     },
   },
 }
