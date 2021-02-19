@@ -1,6 +1,6 @@
 <template>
   <div class="flex items-center justify-center w-screen h-screen">
-    <div class="w-11/12 p-4 bg-white shadow-2xl">
+    <div class="w-11/12 p-4 bg-white shadow-2xl sm:w-1/2">
       <span class="hidden inline mb-2 text-sm sm:text-base" 
         >Enter the code below: </span
       >
