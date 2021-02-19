@@ -60,6 +60,8 @@ export default {
         this.error = ''
         this.hpf = this.message
         if (this.hpf == '') {
+          this.$cookies.set('code', this.code)
+          this.$store.commit('setIsAuthorized', true)
           this.$router.push(this.$store.state.redirectTo)
           if (False){
             try {
