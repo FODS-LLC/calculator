@@ -60,16 +60,19 @@ export default {
         this.error = ''
         this.hpf = this.message
         if (this.hpf == '') {
-          try {
-            await this.$axios.post('https://getfods-api.herokuapp.com/checkCode', {
-              code: this.code,
-            })
-            this.$cookies.set('code', this.code)
-            this.$store.commit('setIsAuthorized', true)
-            this.$router.push(this.$store.state.redirectTo)
-          } catch (err) {
-            console.log('err', err)
-            this.error = 'Incorrect code.'
+          this.$router.push(this.$store.state.redirectTo)
+          if (False){
+            try {
+              await this.$axios.post('https://getfods-api.herokuapp.com/checkCode', {
+                code: this.code,
+              })
+              this.$cookies.set('code', this.code)
+              this.$store.commit('setIsAuthorized', true)
+              this.$router.push(this.$store.state.redirectTo)
+            } catch (err) {
+              console.log('err', err)
+              this.error = 'Incorrect code.'
+            }
           }
         }
     },
